@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 3000px;
+}
+
+.top-nav {
+  background-color: rgb(217, 245, 252);
+  color: rgb(16, 162, 198);
+}
+
+.nav-cont,
+.hero-cont {
+  max-width: 1200px;
+}
+
+.nav-right a {
+  font-size: 14px;
+}
+
+.nav-right a:nth-child(-n+6) {
+  color: grey;
+}
+
+.nav-right a:nth-child(7) {
+  background-color: rgb(88, 144, 251);
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 15px;
+  box-shadow: 0px 5px 10px rgb(181, 205, 255);
+  transition: background-color 0.15s ease;
+}
+
+.nav-right a:nth-child(7):hover {
+  background-color: rgb(104, 156, 252);
+}
+
+.hero {
+  background-image: url(images/hero-background-img.webp);
+  background-position: center;
+  /* object-fit: contain; */
+  padding: 300px 0;
+}
+
+.hero-cont h1 {
+  font-size: 60px;
+}
+
