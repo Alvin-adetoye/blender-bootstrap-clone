@@ -98,3 +98,9 @@ body {
   padding: 10px 15px;
 }
 
+@media (max-width:470px) {
+  .hero {
+    background-position: 80% center;
+  }
+}
+
