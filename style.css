@@ -98,6 +98,29 @@ body {
   padding: 10px 15px;
 }
 
+.latest-news-section {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.news-cont-img {
+  /* height: 330px; */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.news-cont-img img{
+  /* width: 100%; */
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.news-cont-img img:hover {
+  transform: scale(1.02);
+}
+
 @media (max-width:470px) {
   .hero {
     background-position: 80% center;
