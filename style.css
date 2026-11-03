@@ -210,6 +210,32 @@ body {
   display: block;
 }
 
+.open-source-left h2 {
+  color: rgb(70, 235, 194);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 800;
+}
+
+.open-source-left p {
+  /* font-size: 20px; */
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 800px;
+  width: 100%;
+  /* margin: 30px 0 0 0; */
+}
+
+.open-source-left p:nth-child(2) {
+  margin-top: 20px;
+}
+
+.open-source-left p:nth-child(3) {
+  margin-top: 40px;
+}
+
+.open-source-img {
+  width: 120px;
+}
+
 @media (max-width: 470px) {
   .hero {
     background-position: 80% center;
@@ -222,4 +248,9 @@ body {
   .span1 {
     display: inline;
   }
+
+  /* .open-source-img {
+    width: 50px;
+    height: 20px;
+  } */
 }
