@@ -99,7 +99,9 @@ body {
 .latest-news-section,
 .report-section,
 .industry-section,
-.people-section {
+.people-section,
+.Ecosytem-section,
+.needs-section {
   max-width: 1250px;
   width: 100%;
 }
@@ -223,12 +225,15 @@ body {
 
 .open-source-left h2,
 .industry-section h2,
-.people-section h2 {
+.people-section h2,
+.Ecosytem-section h2,
+.needs-section a:nth-child(1) {
   font-size: clamp(2rem, 5vw, 4.5rem);
   font-weight: 800;
 }
 
-.open-source-left p {
+.open-source-left p,
+.Ecosytem-section p {
   /* font-size: 20px; */
   font-size: clamp(1rem, 2vw, 1.25rem);
   max-width: 800px;
@@ -310,6 +315,81 @@ body {
   height: 160px;
 }
 
+.Ecosytem-section {
+  background-image:
+    linear-gradient(
+      90deg,rgba(35, 25, 190, 0.75) 0%,  rgba(65, 80, 225, 0.4) 100%),
+    url(images/Ecosystemimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 470px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.Ecosytem-section p {
+  max-width: 700px;
+}
+
+.Ecosytem-section a {
+  font-size: clamp(1rem, 1.8vw, 1.3125rem);
+  font-weight: 400;
+  color: #fff;
+}
+
+.blender-cont-child2{
+  height: 350px;
+}
+
+.blender-cont-child2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blender-cont-child2 img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.needs-section a:nth-child(1) {
+  text-decoration: none;
+  color: rgb(76, 77, 82);
+}
+
+.blender-cont {
+  margin-top: 100px;
+}
+
+.blender-cont-child h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(76, 77, 82);
+}
+
+.blender-cont-child p,
+.blender-cont-child li {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.blender-cont-child p {
+  line-height: 40px;
+}
+
+.blender-cont-child li {
+  max-width: 470px;
+}
+
+.blender-cont-child li::marker {
+  font-size: 0.5rem;
+}
+
 @media (max-width: 470px) {
   .hero {
     background-position: 80% center;
@@ -325,6 +405,10 @@ body {
 
   .span1 {
     display: inline;
+  }
+
+  .blender-cont-child2 {
+    height: 200px;
   }
 }
 
