@@ -368,7 +368,7 @@ body {
 }
 
 .blender-cont-child h3 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 800;
   color: rgb(76, 77, 82);
 }
