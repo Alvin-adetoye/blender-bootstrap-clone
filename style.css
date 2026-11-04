@@ -98,7 +98,8 @@ body {
 
 .latest-news-section,
 .report-section,
-.industry-section {
+.industry-section,
+.people-section {
   max-width: 1250px;
   width: 100%;
 }
@@ -146,7 +147,8 @@ body {
 .news-card a:nth-child(3):hover,
 .news-card2 a:nth-child(3):hover,
 .report-section-card a:nth-child(3):hover,
-.info-cards a:nth-child(2):hover {
+.info-cards a:nth-child(2):hover,
+.people-card-child a:nth-child(2):hover {
   color: rgb(0, 153, 255);
 }
 
@@ -220,13 +222,13 @@ body {
 }
 
 .open-source-left h2,
-.industry-section h2 {
+.industry-section h2,
+.people-section h2 {
   font-size: clamp(2rem, 5vw, 4.5rem);
   font-weight: 800;
 }
 
-.open-source-left p,
-.span1 {
+.open-source-left p {
   /* font-size: 20px; */
   font-size: clamp(1rem, 2vw, 1.25rem);
   max-width: 800px;
@@ -250,7 +252,12 @@ body {
   background-color: rgb(242, 247, 255);
 }
 
-.industry-section p {
+.people-section {
+  background-color: rgb(248, 242, 255);
+}
+
+.industry-section p,
+.people-section p:nth-child(2) {
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: rgb(76, 77, 82);
   max-width: 1050px;
@@ -266,6 +273,43 @@ body {
   width: 140px;
 }
 
+.people-section h2 {
+  color: rgb(147, 0, 255);
+}
+
+.people-card-img {
+  height: 350px;
+  overflow: hidden;
+}
+
+.people-card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.people-card-img img:hover {
+  transform: scale(1.05);
+}
+
+.people-card-child a:nth-child(2) {
+  text-decoration: none;
+  font-size: clamp(1rem, 1.8vw, 1.3125rem);
+  font-weight: 400;
+  color: rgb(77, 78, 83);
+  margin: 8px 0;
+}
+
+.info-img img {
+  height: 100%;
+}
+
+.info-img {
+  height: 160px;
+}
+
 @media (max-width: 470px) {
   .hero {
     background-position: 80% center;
@@ -275,7 +319,25 @@ body {
     height: 100px;
   }
 
+  .people-card-img {
+    height: 400px;
+  }
+
   .span1 {
     display: inline;
+  }
+}
+
+@media (min-width: 471px) and (max-width: 768px) {
+  .span1 {
+    display: inline;
+  }
+
+  .info-img {
+    height: 400px;
+  }
+
+  .people-card-img {
+    height: 800px;
   }
 }
