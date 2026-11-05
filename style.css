@@ -8,7 +8,6 @@
 
 body {
   font-family: "Inter", sans-serif;
-  height: 3000px;
   background-color: rgb(242, 242, 243);
 }
 
@@ -391,6 +390,9 @@ body {
 }
 
 @media (max-width: 470px) {
+  body {
+    overflow-x: hidden;
+  }
   .hero {
     background-position: 80% center;
   }
